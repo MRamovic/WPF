@@ -23,7 +23,7 @@ namespace WPF
         public DodajArtikle()
         {
             InitializeComponent();
-            
+            //dg_dodaj.ItemsSource=Lista;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
