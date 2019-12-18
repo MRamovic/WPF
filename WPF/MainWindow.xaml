@@ -1,0 +1,102 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel >
+        
+        
+        <StackPanel DockPanel.Dock="Top" >
+            <Image Source=" Slike/logo.png" Width=" 1000" Height=" 80"/>
+        </StackPanel>
+        
+        
+        
+        <UniformGrid Columns="5" DockPanel.Dock="Top"  >
+            
+            
+            <Button     Name="Kafa"           Click="Click_bt_Kafa"       FontSize=" 40" Width=" 80" Height=" 80"     Margin="5,0">
+                <StackPanel>
+                    <Image Source="Slike/Kafa.png" Width=" 80" Height=" 80"/>
+                </StackPanel>
+            </Button>
+
+            
+            <Button     Name="Pice"         Click="Click_bt_Pice"    Width=" 80" Height=" 80"   FontSize=" 40"      Margin="5,0">
+                <StackPanel>
+                    <Image Source="Slike/Sok.png" Width=" 80" Height=" 80"/>
+                </StackPanel>
+            </Button>
+            
+            
+            <Button     Name="Hrana"         Click="Click_bt_Hrana"    Width=" 80" Height=" 80"  FontSize=" 40"      Margin="5,0">
+                <StackPanel>
+                    <Image Source="Slike/Pizza.png" Width=" 80" Height=" 80"/>
+                </StackPanel>
+            </Button>
+            
+            
+            <Button     Name="Kolaci"       Click="Click_bt_Kolaci"   Width=" 80" Height=" 80"  FontSize=" 40"      Margin="5,0">
+                <StackPanel>
+                    <Image Source="Slike/Torta.png" Width=" 80" Height=" 80"/>
+                </StackPanel>
+            </Button>
+            
+            
+            <Button     Name="Artikli"    Click="Click_bt_Artikli"   Width=" 80" Height=" 80" FontSize=" 40"      Margin="5,0">
+                <StackPanel>
+                    <Image Source="Slike/add.png" Width=" 80" Height=" 80"/>
+                </StackPanel>
+            </Button>
+            
+         
+
+        </UniformGrid>
+        <UniformGrid Columns=" 5" DockPanel.Dock="Top" >
+            <Label Content=" Kafa" HorizontalAlignment="Center" FontSize=" 20" />
+            <Label Content=" Sok" HorizontalAlignment="Center" FontSize=" 20"/>
+            <Label Content=" Hrana" HorizontalAlignment="Center" FontSize=" 20"/>
+            <Label Content=" Kolac" HorizontalAlignment="Center" FontSize=" 20"/>
+            <Label Content=" Dodaj/izmeni" HorizontalAlignment="Center" FontSize=" 20"/>
+        </UniformGrid>
+
+        
+        
+        
+        
+        <UniformGrid Columns="4" DockPanel.Dock="Bottom">
+            <Button Name ="Izlaz"           Content="Izlaz"             Click="Click_bt_Izlaz"      FontSize=" 20" Margin=" 40,10"/>
+            <Button Name ="Ponisti"         Content="Ponisti racun"     Click="Click_bt_Ponisti"    FontSize=" 20" Margin=" 40,10"/>
+            <Button Name ="Izbrisi_Artikal" Content="Izbrisi Artikal"   Click="Click_bt_Izbrisi"    FontSize=" 20" Margin=" 40,10"/>
+            <Button Name ="IzdajRacun"      Content="Izdaj Racun"       Click="Click_bt_Izdaj"      FontSize=" 20" Margin=" 40,10"/>
+        </UniformGrid>
+
+
+        
+        
+
+
+        <DataGrid Name="dg" DockPanel.Dock="Right"   Margin="20,20,20,20" Width="330"></DataGrid>
+        
+        
+        
+        
+        
+        <UniformGrid Columns="3"    Margin=" 20,20" >
+            <Button Content="1"     Margin=" 5,5"/>
+            <Button Content="2"     Margin=" 5,5"/>
+            <Button Content="3"     Margin=" 5,5"/>
+            <Button Content="4"     Margin=" 5,5"/>
+            <Button Content="5"     Margin=" 5,5"/>
+            <Button Content="6"     Margin=" 5,5"/>
+            <Button Content="7"     Margin=" 5,5"/>
+            <Button Content="8"     Margin=" 5,5"/>
+            <Button Content="9"     Margin=" 5,5"/>
+        </UniformGrid>
+        
+        
+    </DockPanel>
+</Window>
